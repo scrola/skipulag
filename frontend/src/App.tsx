@@ -9,7 +9,7 @@ import economyIcon from "../assets/economy.png";
 export default function App() {
   return (
     <>
-      <div className="h-screen items-center">
+      <div className="w-screen mx-auto flex-col flex-grow">
         <header className="w-full border-b border-gray-200 w-full h-17">
           <nav className="items-center flex p-5 justify-between">
             <div className="justify-left">
@@ -48,10 +48,10 @@ export default function App() {
           <section>
             <div className="w-full justify-between flex h-120 p-10 border-b border-gray-300 bg-radial from-[#bc5de814] to-[#bc5de823]">
               <div className="flex-col">
-                <h4 className="text-4xl text-black font-bold text-left">
+                <h4 className="text-6xl text-black font-bold text-left">
                   Cuide das suas finanças.
                 </h4>
-                <h4 className="text-3xl text-black font-bold text-left">
+                <h4 className="text-4xl text-black font-bold text-left">
                   Planeje seu futuro.
                 </h4>
                 <h4 className="text-2xl text-black font-bold text-left">
@@ -76,13 +76,13 @@ export default function App() {
               />
             </div>
           </section>
-          <section className="py-10 w-full flex-col justify-center">
+          <section className="py-10 w-full flex-col justify-between">
             <h2 className="text-center text-3xl font-bold p-2">
               Por que escolher o{" "}
               <span className="text-[#8611bd]">$KIPULAG</span>?
             </h2>
-            <div className="flex flex-row items-center gap justify-center p-5">
-              <div className="flex-col rounded border border-gray-200 p-5">
+            <div className="flex flex-col justify-between p-5 w-full lg:flex md:flex-row">
+              <div className="flex-1 rounded border border-gray-200 p-5 ">
                 <img src={segurancaIcon} alt="" className="pb-2" />
                 <h2 className="pb-5 font-bold">Segurança</h2>
                 <p className="text-sm">
@@ -91,7 +91,7 @@ export default function App() {
                   armazenadas diretamente no seu computador.
                 </p>
               </div>
-              <div className="flex-col rounded border border-gray-200 p-5">
+              <div className="flex-1 rounded border border-gray-200 p-5">
                 <img src={visaoIcone} alt="" className="pb-2" />
                 <h2 className="pb-5 font-bold">Visualização</h2>
                 <p className="text-sm">
@@ -99,7 +99,7 @@ export default function App() {
                   assistir detalhadamente os rumos das suas finanças pessoais.
                 </p>
               </div>
-              <div className="flex-col rounded border border-gray-200 p-5">
+              <div className="flex-1 rounded border border-gray-200 p-5">
                 <img src={versatileIcon} alt="" className="pb-2" />
                 <h2 className="pb-5 font-bold">Versatilidade</h2>
                 <p className="text-sm">
@@ -107,7 +107,7 @@ export default function App() {
                   mudar a moeda a qualquer momento.
                 </p>
               </div>
-              <div className="flex-col rounded border border-gray-200 p-5">
+              <div className="flex-1 rounded border border-gray-200 p-5">
                 <img src={economyIcon} alt="" className="pb-2" />
                 <h2 className="pb-5 font-bold">Economia</h2>
                 <p className="text-sm">
@@ -119,12 +119,13 @@ export default function App() {
           </section>
         </main>
 
-        <footer className="bg-gray-100 w-full h-100 flex justify-center">
-          <p className="text-center">
+        <footer className="w-full h-20 flex items-center justify-center">
+          <p className="text-center text-xs">
             Desenvolvido por &copy;{" "}
             <a
               className="hover:underline text-[#8611bd]"
               href="https://github.com/scrola"
+              target="_blank"
             >
               Carlos Lopes
             </a>
