@@ -9,9 +9,9 @@ import economyIcon from "../assets/economy.png";
 export default function App() {
   return (
     <>
-      <div className="bg-[#bc5de823]">
-        <div className="max-w-7xl h-screen w-full mx-auto flex-col flex-grow">
-          <header className="w-full border-b border-gray-200 w-full h-20">
+      <div className="bg-[#ffa8ff16]">
+        <div className="max-w-7xl min-h-screen w-full mx-auto flex-col flex-grow">
+          <header className="w-full w-full h-20">
             <nav className="flex p-5 justify-between">
               <div className="justify-left">
                 <span className="text-[#8611bd] font-extrabold text-3xl">
@@ -41,7 +41,7 @@ export default function App() {
               </div>
             </nav>
           </header>
-          <main className="">
+          <main className="p-10">
             <section>
               <div className="w-full justify-between flex p-10 bg-radial from-[#bc5de814] to-[#bc5de823]">
                 <div className="flex-col">
@@ -66,11 +66,11 @@ export default function App() {
                   src={mainPhoto}
                   alt="Skipulag Chart"
                   className="px-5"
-                  width={450}
+                  width={220}
                 />
               </div>
             </section>
-            <section className="py-10 w-full flex-col justify-between">
+            <section className="py-10 w-full flex-col justify-between px-1 lg:px-0">
               <h2 className="text-center text-3xl font-bold">
                 Por que escolher o{" "}
                 <span className="text-[#8611bd]">$KIPULAG</span>?
@@ -113,7 +113,7 @@ export default function App() {
             </section>
           </main>
 
-          <footer className="w-full h-20 flex items-center justify-center  static">
+          {/* <footer className="w-full h-20 flex items-center justify-center  static">
             <p className="text-center text-xs">
               Desenvolvido por &copy;{" "}
               <a
@@ -124,7 +124,7 @@ export default function App() {
                 Carlos Lopes
               </a>
             </p>
-          </footer>
+          </footer> */}
         </div>
       </div>
     </>
