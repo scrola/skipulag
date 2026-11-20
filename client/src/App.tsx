@@ -1,6 +1,4 @@
 import githubLogo from "../assets/github.svg";
-import searchIcon from "../assets/search.svg";
-import mainPhoto from "../assets/main-photo.svg";
 import segurancaIcon from "../assets/seguranca.png";
 import visaoIcone from "../assets/view.png";
 import versatileIcon from "../assets/versatil.png";
@@ -19,19 +17,6 @@ export default function App() {
                 </span>
               </div>
               <div className="justify-end flex gap-5">
-                <search className="w-auto flex relative items-center static">
-                  <img
-                    src={searchIcon}
-                    width={20}
-                    alt="GitHub Logo"
-                    className="absolute"
-                  />
-                  <input
-                    type="search "
-                    placeholder="Pesquisar"
-                    className="border border-gray-300 rounded-md px-5 text-sm p-1 bg-gray-100 w-45"
-                  />
-                </search>
                 <a href="https://github.com/scrola/skipulag" target="_blank">
                   <img src={githubLogo} alt="" width={30} />
                 </a>
@@ -62,12 +47,12 @@ export default function App() {
                     Iniciar
                   </button>
                 </div>
-                <img
+                {/* <img
                   src={mainPhoto}
                   alt="Skipulag Chart"
                   className="px-5"
                   width={220}
-                />
+                /> */}
               </div>
             </section>
             <section className="py-10 w-full flex-col justify-between px-1 lg:px-0">
@@ -75,7 +60,7 @@ export default function App() {
                 Por que escolher o{" "}
                 <span className="text-[#8611bd]">$KIPULAG</span>?
               </h2>
-              <div className="flex flex-col justify-between py-10 w-full lg:flex-row md:flex-col">
+              <div className="flex space-y-2 rounded-xl lg:gap-1 flex-col justify-between py-10 w-full lg:flex-row md:flex-col">
                 <div className="flex-1 rounded border border-gray-200 p-5 ">
                   <img src={segurancaIcon} alt="" className="pb-2" />
                   <h2 className="pb-5 font-bold">Segurança</h2>
@@ -112,8 +97,7 @@ export default function App() {
               </div>
             </section>
           </main>
-
-          {/* <footer className="w-full h-20 flex items-center justify-center  static">
+          <footer className="w-full h-20 flex items-center justify-center  static">
             <p className="text-center text-xs">
               Desenvolvido por &copy;{" "}
               <a
@@ -124,7 +108,7 @@ export default function App() {
                 Carlos Lopes
               </a>
             </p>
-          </footer> */}
+          </footer>
         </div>
       </div>
     </>
