@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="max-w-7xl w-full mx-auto">
       <div className="bg-[#ffa8ff16] flex flex-col min-h-screen">
-        <header className="w-full h-20">
+        <header className="w-full h-20 border-b border-gray-300">
           <nav className="flex p-5 justify-between">
             <div className="justify-left">
               <span className="text-[#8611bd] font-extrabold text-3xl">
@@ -28,7 +28,7 @@ export default function App() {
           </nav>
         </header>
 
-        <main className="p-10 flex-1">
+        <main className="p-10 flex-1 border-b border-gray-300">
           <section>
             <div className="w-full flex-col rounded-md justify-between flex p-10 bg-radial from-[#bc5de814] to-[#bc5de823]">
               <div className="flex-col">
@@ -94,8 +94,8 @@ export default function App() {
             </div>
           </section>
 
-          <section className="w-full items-center space-y-10 lg:flex-row rounded-md flex flex-col h-auto">
-            <div className="flex space-y-3 flex-col items-center text-center">
+          <section className="w-full items-center space-y-5 lg:flex-row rounded-md flex flex-col h-auto">
+            <div className="flex space-y-6 flex-col items-center text-center">
               <div className="flex items-center justify-center gap-2 px-4 py-1 bg-[#bc5de823] rounded-2xl">
                 <img src={livreIndicacao} alt="" width={20} />
                 <p className="font-semibold text-[#8611bd]">Livre Indicação</p>
@@ -119,8 +119,7 @@ export default function App() {
             />
           </section>
         </main>
-
-        <footer className="w-full bg-gray-200 flex flex-col px-10 py-12">
+        <footer className="w-full bg-gray-100 flex flex-col px-10 py-12">
           <p className="font-semibold text-black text-sm pb-3">Recursos</p>
           <a
             href="https://github.com"
