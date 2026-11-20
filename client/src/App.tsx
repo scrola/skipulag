@@ -13,7 +13,7 @@ export default function App() {
         <header className="w-full h-20 border-b border-gray-300">
           <nav className="flex p-5 justify-between">
             <div className="justify-left">
-              <span className="text-[#8611bd] font-extrabold text-3xl">
+              <span className="text-[#8611bd] font-extrabold text-2xl">
                 $KIPULAG
               </span>
             </div>
@@ -57,7 +57,7 @@ export default function App() {
               Por que escolher o{" "}
               <span className="text-[#8611bd]">$KIPULAG</span>?
             </h2>
-            <div className="flex space-y-1 rounded-xl lg:gap-1 flex-col justify-between py-10 w-full lg:flex-row md:flex-col">
+            <div className="flex rounded-xl flex-col justify-between py-10 w-full lg:flex-row md:flex-col">
               <div className="flex-1 rounded border border-gray-200 p-5">
                 <img src={segurancaIcon} alt="" className="pb-2" />
                 <h2 className="pb-5 font-bold">Segurança</h2>
@@ -94,17 +94,17 @@ export default function App() {
             </div>
           </section>
 
-          <section className="w-full items-center space-y-5 lg:flex-row rounded-md flex flex-col h-auto">
-            <div className="flex space-y-6 flex-col items-center text-center">
+          <section className="w-full space-y-10 items-center lg:flex-row rounded-md flex flex-col h-auto">
+            <div className="flex flex-col items-center text-center space-y-5 px-2">
               <div className="flex items-center justify-center gap-2 px-4 py-1 bg-[#bc5de823] rounded-2xl">
                 <img src={livreIndicacao} alt="" width={20} />
                 <p className="font-semibold text-[#8611bd]">Livre Indicação</p>
               </div>
 
-              <h1 className="text-3xl font-bold text-center lg:text-left pb-4">
+              <h1 className="text-3xl font-bold text-center lg:text-left">
                 Visualização interativa
               </h1>
-              <p className="text-center text-lg lg:text-left pb-4">
+              <p className="text-center text-lg lg:text-left">
                 Usufrua de um painel totalmente interativo com recursos
                 interessantes e visualmente agradáveis. Você pode também
                 exportar relatórios, visualizar gráficos e acompanhar
