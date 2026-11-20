@@ -3,13 +3,15 @@ import segurancaIcon from "../assets/seguranca.png";
 import visaoIcone from "../assets/view.png";
 import versatileIcon from "../assets/versatil.png";
 import economyIcon from "../assets/economy.png";
+import mainPhoto from "../assets/main-photo.svg";
+import livreIndicacao from "../assets/livre.svg";
 
 export default function App() {
   return (
     <>
-      <div className="bg-[#ffa8ff16]">
-        <div className="max-w-7xl min-h-screen w-full mx-auto flex-col flex-grow">
-          <header className="w-full w-full h-20">
+      <div className="max-w-7xl min-h-screen w-full mx-auto flex-col flex-grow">
+        <div className="bg-[#ffa8ff16]">
+          <header className="w-full h-20">
             <nav className="flex p-5 justify-between">
               <div className="justify-left">
                 <span className="text-[#8611bd] font-extrabold text-3xl">
@@ -28,7 +30,7 @@ export default function App() {
           </header>
           <main className="p-10">
             <section>
-              <div className="w-full justify-between flex p-10 bg-radial from-[#bc5de814] to-[#bc5de823]">
+              <div className="w-full flex-col rounded-md justify-between flex p-10 bg-radial from-[#bc5de814] to-[#bc5de823]">
                 <div className="flex-col">
                   <h4 className="text-5xl text-black font-bold text-left">
                     Cuide das suas finanças.
@@ -47,12 +49,6 @@ export default function App() {
                     Iniciar
                   </button>
                 </div>
-                {/* <img
-                  src={mainPhoto}
-                  alt="Skipulag Chart"
-                  className="px-5"
-                  width={220}
-                /> */}
               </div>
             </section>
             <section className="py-10 w-full flex-col justify-between px-1 lg:px-0">
@@ -60,7 +56,7 @@ export default function App() {
                 Por que escolher o{" "}
                 <span className="text-[#8611bd]">$KIPULAG</span>?
               </h2>
-              <div className="flex space-y-2 rounded-xl lg:gap-1 flex-col justify-between py-10 w-full lg:flex-row md:flex-col">
+              <div className="flex space-y-1 rounded-xl lg:gap-1 flex-col justify-between py-10 w-full lg:flex-row md:flex-col">
                 <div className="flex-1 rounded border border-gray-200 p-5 ">
                   <img src={segurancaIcon} alt="" className="pb-2" />
                   <h2 className="pb-5 font-bold">Segurança</h2>
@@ -87,14 +83,38 @@ export default function App() {
                   </p>
                 </div>
                 <div className="flex-1 rounded border border-gray-200 p-5">
-                  <img src={economyIcon} alt="" className="pb-2" />
-                  <h2 className="pb-5 font-bold">Economia</h2>
+                  <img src={economyIcon} alt="" className="" />
+                  <h2 className="font-bold">Economia</h2>
                   <p className="text-sm">
                     Usuários do Brasil podem ver em tempo real a cotação do
                     dólar, BTC e demais indicadores econômicos.
                   </p>
                 </div>
               </div>
+            </section>
+            <section className="w-full items-center lg:flex-row rounded-md flex flex-col h-auto">
+              <div className="lg:space-y-4 flex flex-col items-center text-center space-y-3">
+                <div className="flex items-center justify-center gap-2 px-4 py-1 bg-[#bc5de823] rounded-2xl">
+                  <img src={livreIndicacao} alt="" width={20} />
+                  <p className="font-semibold text-[#8611bd]">
+                    Livre Indicação
+                  </p>
+                </div>
+
+                <h1 className="text-3xl font-bold text-center lg:text-left pb-4">
+                  Formas interativas
+                </h1>
+                <p className="text-center lg:text-left pb-4">
+                  Usufrua de um painel totalmente interativo com recursos
+                  interessantes e visualmente agradáveis.
+                </p>
+              </div>
+              <img
+                src={mainPhoto}
+                width={500}
+                className="rounded-md"
+                alt="Chart photo"
+              />
             </section>
           </main>
           <footer className="w-full h-20 flex items-center justify-center  static">
