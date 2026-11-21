@@ -84,8 +84,8 @@ export default function App() {
                 </p>
               </div>
               <div className="flex-1 rounded border border-gray-200 p-5">
-                <img src={economyIcon} alt="" className="" />
-                <h2 className="font-bold">Economia</h2>
+                <img src={economyIcon} alt="" className="pb-2" />
+                <h2 className="pb-5 font-bold">Economia</h2>
                 <p className="text-sm">
                   Usuários do Brasil podem ver em tempo real a cotação do dólar,
                   BTC e demais indicadores econômicos.
@@ -94,22 +94,23 @@ export default function App() {
             </div>
           </section>
 
-          <section className="w-full space-y-10 items-center lg:flex-row rounded-md flex flex-col h-auto">
+          <section className="w-full space-y-10 items-center lg:flex-row rounded-md flex flex-col">
             <div className="flex flex-col items-center text-center space-y-5 px-2">
-              <div className="flex items-center justify-center gap-2 px-4 py-1 bg-[#bc5de823] rounded-2xl">
+              <div className="flex items-center justify-center lg:items-left lg:justify-start gap-2 px-4 py-1 bg-[#bc5de823] rounded-2xl">
                 <img src={livreIndicacao} alt="" width={20} />
                 <p className="font-semibold text-[#8611bd]">Livre Indicação</p>
               </div>
-
-              <h1 className="text-3xl font-bold text-center lg:text-left">
-                Visualização interativa
-              </h1>
-              <p className="text-center text-lg lg:text-left">
-                Usufrua de um painel totalmente interativo com recursos
-                interessantes e visualmente agradáveis. Você pode também
-                exportar relatórios, visualizar gráficos e acompanhar
-                tendências.
-              </p>
+              <div className="flex flex-col space-y-5">
+                <h1 className="text-3xl font-bold text-center lg:text-left">
+                  Visualização interativa
+                </h1>
+                <p className="text-center text-lg lg:text-left">
+                  Usufrua de um painel totalmente interativo com recursos
+                  interessantes e visualmente agradáveis. Você pode também
+                  exportar relatórios, visualizar gráficos e acompanhar
+                  tendências.
+                </p>
+              </div>
             </div>
             <img
               src={mainPhoto}
